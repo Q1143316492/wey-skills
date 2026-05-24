@@ -1,8 +1,11 @@
 # wey-skills
 
-个人 AI Agent Skill 库。反 vibe coding，注重人在 AI 时代的主导价值。
+个人 AI Agent Skill 库。
 
 Skills 是按需加载的工作流指令，Copilot/Claude 会根据对话内容自动识别并调用。
+
+膜拜 https://github.com/mattpocock/skills/tree/main 并做按需迁移给自己
+
 
 ## Skills
 
