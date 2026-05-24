@@ -20,6 +20,14 @@ Skills 是按需加载的工作流指令，Copilot/Claude 会根据对话内容�
 | `write-a-skill` | "write a skill" / 新建 skill 时 | 帮你创建新 skill 的 meta skill |
 | `write-game-doc` | "生成文档" / "document this" / 写系统文档时 | 生成游戏系统的 HTML + Markdown 文档（Unity / UE 通用，含配置项、UI 资源、代码入口） |
 
+## 第三方 Skill（项目内按需安装，不纳入存档）
+
+> 通过各自的 CLI 工具安装到项目 `.github/prompts/` 目录，已加入 `.gitignore`。
+
+| Skill | 安装命令 | 用途 |
+|-------|---------|------|
+| [`ui-ux-pro-max`](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | `uipro init --ai copilot` | UI/UX 设计智能：67 种风格、161 色板、57 字体搭配、99 条 UX 准则，支持 10+ 技术栈 |
+
 ## 目录结构
 
 ```
@@ -49,3 +57,7 @@ wey-skills/
 ```powershell
 cmd /c mklink /J "<project>\.github\skills" "D:\Unity\Src\wey-skills"
 ```
+
+## 感兴趣但是未试用
+
+https://github.com/remotion-dev/skills
