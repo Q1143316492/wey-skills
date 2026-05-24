@@ -15,6 +15,7 @@ Skills 是按需加载的工作流指令，Copilot/Claude 会根据对话内容�
 | `caveman` | "caveman" / "less tokens" | 超压缩沟通模式，省 ~75% token |
 | `tdd` | "tdd" / "red-green-refactor" | 测试驱动开发，逐步红绿循环 |
 | `write-a-skill` | "write a skill" / 新建 skill 时 | 帮你创建新 skill 的 meta skill |
+| `write-game-doc` | "生成文档" / "document this" / 写系统文档时 | 生成游戏系统的 HTML + Markdown 文档（Unity / UE 通用，含配置项、UI 资源、代码入口） |
 
 ## 目录结构
 
@@ -27,7 +28,10 @@ wey-skills/
 ├── handoff/SKILL.md
 ├── caveman/SKILL.md
 ├── tdd/SKILL.md
-└── write-a-skill/SKILL.md
+├── write-a-skill/SKILL.md
+└── write-game-doc/
+    ├── SKILL.md
+    └── template.html
 ```
 
 ## 在项目中使用
