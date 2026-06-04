@@ -1,0 +1,60 @@
+{
+  "expectations": [
+    {
+      "text": "Adds a comment block above the function",
+      "passed": true,
+      "evidence": "output.md contains '// Calculates the Euclidean distance between two Vector2 points.' directly above the function signature"
+    },
+    {
+      "text": "Comment describes that it calculates distance between two points",
+      "passed": true,
+      "evidence": "Comment explicitly states 'Calculates the Euclidean distance between two Vector2 points'"
+    },
+    {
+      "text": "Uses appropriate C# comment syntax (// or ///)",
+      "passed": true,
+      "evidence": "Uses '//' syntax, which is correct C# single-line comment format"
+    },
+    {
+      "text": "Comment is concise (1-2 sentences maximum)",
+      "passed": true,
+      "evidence": "Comment is exactly 1 sentence: 'Calculates the Euclidean distance between two Vector2 points.'"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.00
+  },
+  "claims": [
+    {
+      "claim": "I read the function-documenter skill instructions",
+      "type": "process",
+      "verified": true,
+      "evidence": "Output demonstrates skill-compliant documentation (brief, verb-first, present tense)"
+    },
+    {
+      "claim": "recognized it implements the Euclidean distance formula using the Pythagorean theorem",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Function code shows dx*dx + dy*dy pattern under Sqrt, which is the Euclidean/Pythagorean distance formula"
+    },
+    {
+      "claim": "added a C#-style comment describing its purpose",
+      "type": "process",
+      "verified": true,
+      "evidence": "output.md contains C# comment '//' describing function purpose"
+    },
+    {
+      "claim": "The documentation follows the skill's best practices: brief, starts with a verb, uses present tense, and focuses on what the function does rather than how",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Comment is 1 sentence (brief), starts with 'Calculates' (verb, present tense), describes outcome not algorithm details"
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

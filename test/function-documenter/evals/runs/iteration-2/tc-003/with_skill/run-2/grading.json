@@ -1,0 +1,45 @@
+{
+  "test_case": "tc-003",
+  "iteration": "iteration-2",
+  "version": "v1.1",
+  "run": "run-2",
+  "graded_at": "2026-06-05",
+  "behaviors": {
+    "all_three_functions_documented": {
+      "expected": "All three functions receive documentation comments",
+      "result": "PASS",
+      "notes": "GetScore, AddScore, and ResetScore all have documentation comments"
+    },
+    "accurate_descriptions": {
+      "expected": "Each comment accurately describes its function's purpose",
+      "result": "PASS",
+      "notes": "GetScore returns score, AddScore adds points, ResetScore resets to zero - all accurate"
+    },
+    "consistent_formatting": {
+      "expected": "Comments use consistent formatting style",
+      "result": "PASS",
+      "notes": "All use // single-line comment style with consistent structure"
+    },
+    "no_undocumented_functions": {
+      "expected": "No function is left undocumented",
+      "result": "PASS",
+      "notes": "All three functions have documentation"
+    },
+    "getscore_return_documented": {
+      "expected": "GetScore's return value is documented",
+      "result": "PASS",
+      "notes": "Includes 'Returns: The current score value'"
+    },
+    "addscore_parameter_documented": {
+      "expected": "AddScore's parameter (points) is documented",
+      "result": "PASS",
+      "notes": "Includes 'points - The number of points to add'"
+    }
+  },
+  "summary": {
+    "total_behaviors": 6,
+    "passed": 6,
+    "failed": 0,
+    "pass_rate": "100%"
+  }
+}

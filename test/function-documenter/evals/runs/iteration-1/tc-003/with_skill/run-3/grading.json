@@ -1,0 +1,30 @@
+{
+  "test_case": "tc-003",
+  "run_type": "with_skill",
+  "run_number": 3,
+  "behaviors": {
+    "all_three_functions_documented": {
+      "description": "All three functions receive documentation comments",
+      "result": "PASS",
+      "notes": "All three functions (GetScore, AddScore, ResetScore) have documentation comments using // style"
+    },
+    "accurate_descriptions": {
+      "description": "Each comment accurately describes its function's purpose",
+      "result": "PASS",
+      "notes": "GetScore: returns score value; AddScore: adds specified points to score; ResetScore: resets score to zero - all accurate"
+    },
+    "consistent_formatting": {
+      "description": "Comments use consistent formatting style",
+      "result": "PASS",
+      "notes": "All comments use single-line C# comment style (//), consistent format throughout"
+    },
+    "no_undocumented_functions": {
+      "description": "No function is left undocumented",
+      "result": "PASS",
+      "notes": "All three functions have documentation"
+    }
+  },
+  "overall_result": "PASS",
+  "pass_count": 4,
+  "fail_count": 0
+}

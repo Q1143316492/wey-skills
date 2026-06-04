@@ -1,0 +1,40 @@
+{
+  "expectations": [
+    {
+      "text": "<original expected_behavior text — must match input exactly>",
+      "passed": true,
+      "evidence": "<specific quote, file path, or tool-call observation>"
+    },
+    {
+      "text": "<another expected behavior>",
+      "passed": false,
+      "evidence": "<why it failed — what was missing or contradicted>"
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 1,
+    "total": 2,
+    "pass_rate": 0.50
+  },
+  "claims": [
+    {
+      "claim": "<implicit claim made by the output, e.g. 'used the X tool'>",
+      "type": "factual",
+      "verified": true,
+      "evidence": "<supporting or contradicting evidence>"
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "<original expected_behavior text, or null if it's about a missing assertion>",
+        "reason": "<why this assertion is weak, or what important outcome no assertion covers>"
+      }
+    ],
+    "overall": "<one-line assessment, or 'No suggestions, evals look solid'>"
+  },
+  "timing": {
+    "duration_seconds": 0.0
+  }
+}

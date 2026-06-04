@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "skill_name": "<skill-name>",
+    "iteration": 1,
+    "timestamp": "YYYY-MM-DDTHH:MM:SSZ",
+    "test_cases_run": ["tc-001", "tc-002"],
+    "runs_per_configuration": 3,
+    "configurations": ["with_skill", "without_skill"]
+  },
+  "runs": [
+    {
+      "test_case_id": "tc-001",
+      "test_case_name": "<name>",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.0,
+        "passed": 0,
+        "failed": 0,
+        "total": 0,
+        "duration_seconds": 0.0,
+        "errors": 0
+      },
+      "expectations": [
+        { "text": "...", "passed": true, "evidence": "..." }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate":        { "mean": 0.0, "stddev": 0.0, "min": 0.0, "max": 0.0 },
+      "duration_seconds": { "mean": 0.0, "stddev": 0.0, "min": 0.0, "max": 0.0 }
+    },
+    "without_skill": {
+      "pass_rate":        { "mean": 0.0, "stddev": 0.0, "min": 0.0, "max": 0.0 },
+      "duration_seconds": { "mean": 0.0, "stddev": 0.0, "min": 0.0, "max": 0.0 }
+    },
+    "delta": {
+      "pass_rate": "+0.00",
+      "duration_seconds": "+0.0"
+    }
+  },
+  "notes": [
+    "Cross-run observations from the analyzer go here. See references/analyzer.md part 2."
+  ]
+}

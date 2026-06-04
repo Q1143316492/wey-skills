@@ -1,0 +1,48 @@
+{
+  "test_cases": [
+    {
+      "id": "tc-001",
+      "name": "Simple utility function",
+      "priority": "P0",
+      "tags": ["basic", "csharp"],
+      "prompt": "Please add documentation to this C# function:\n\npublic float CalculateDistance(Vector2 a, Vector2 b) {\n    float dx = b.x - a.x;\n    float dy = b.y - a.y;\n    return Mathf.Sqrt(dx * dx + dy * dy);\n}",
+      "expected_behaviors": [
+        "Adds a comment block above the function",
+        "Comment describes that it calculates distance between two points",
+        "Uses appropriate C# comment syntax (// or ///)",
+        "Comment is concise (1-2 sentences maximum)"
+      ]
+    },
+    {
+      "id": "tc-002",
+      "name": "Function with multiple parameters",
+      "priority": "P0",
+      "tags": ["parameters", "csharp"],
+      "prompt": "Add documentation to this function:\n\npublic void SpawnEnemy(string enemyType, Vector3 position, int health, bool isBoss) {\n    GameObject enemy = Instantiate(enemyPrefab, position, Quaternion.identity);\n    enemy.GetComponent<Enemy>().enemyType = enemyType;\n    enemy.GetComponent<Enemy>().health = health;\n    enemy.GetComponent<Enemy>().isBoss = isBoss;\n}",
+      "expected_behaviors": [
+        "Adds documentation comment to the function",
+        "Comment mentions spawning or creating an enemy",
+        "Documentation is present and non-empty",
+        "Uses correct C# comment format"
+      ]
+    },
+    {
+      "id": "tc-003",
+      "name": "Multiple functions in one file",
+      "priority": "P1",
+      "tags": ["multiple", "csharp"],
+      "prompt": "Document these three functions:\n\npublic int GetScore() {\n    return score;\n}\n\npublic void AddScore(int points) {\n    score += points;\n}\n\npublic void ResetScore() {\n    score = 0;\n}",
+      "expected_behaviors": [
+        "All three functions receive documentation comments",
+        "Each comment accurately describes its function's purpose",
+        "Comments use consistent formatting style",
+        "No function is left undocumented"
+      ]
+    }
+  ],
+  "meta": {
+    "skill_name": "function-documenter",
+    "created": "2026-06-05",
+    "total_cases": 3
+  }
+}

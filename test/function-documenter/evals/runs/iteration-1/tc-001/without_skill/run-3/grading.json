@@ -1,0 +1,37 @@
+{
+  "test_case": "tc-001",
+  "run": 3,
+  "skill_mode": "without_skill",
+  "behaviors": [
+    {
+      "id": 1,
+      "description": "Adds a comment block above the function",
+      "result": "PASS",
+      "evidence": "A multi-line XML documentation comment block (lines 1-6) is present above the function declaration."
+    },
+    {
+      "id": 2,
+      "description": "Comment describes that it calculates distance between two points",
+      "result": "PASS",
+      "evidence": "The summary line explicitly states: 'Calculates the Euclidean distance between two 2D points.'"
+    },
+    {
+      "id": 3,
+      "description": "Uses appropriate C# comment syntax (// or ///)",
+      "result": "PASS",
+      "evidence": "Uses /// syntax, which is the proper XML documentation comment format for C#."
+    },
+    {
+      "id": 4,
+      "description": "Comment is concise (1-2 sentences maximum)",
+      "result": "FAIL",
+      "evidence": "The entire comment block contains 4 sentences: 1 summary sentence, 2 param description sentences, and 1 returns description sentence. This exceeds the 1-2 sentence maximum requirement."
+    }
+  ],
+  "summary": {
+    "total_behaviors": 4,
+    "passed": 3,
+    "failed": 1,
+    "pass_rate": 0.75
+  }
+}

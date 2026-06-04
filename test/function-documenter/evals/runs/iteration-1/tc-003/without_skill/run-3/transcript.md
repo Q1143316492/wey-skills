@@ -1,0 +1,1 @@
+I analyzed the three C# methods and added standard XML documentation comments to each one. For GetScore(), I documented the return value; for AddScore(), I documented the points parameter; and for ResetScore(), I provided a summary of its functionality. The documented code was saved to the output file.
